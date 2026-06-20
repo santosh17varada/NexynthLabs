@@ -1,10 +1,9 @@
 import { EcosystemProductGrid } from "@/components/product-ecosystem/EcosystemProductGrid";
 import { EcosystemProductStatusBadge } from "@/components/product-ecosystem/EcosystemProductStatusBadge";
+import { ProductEcosystemHeroSection } from "@/components/product-ecosystem/ProductEcosystemHeroSection";
 import { ProductDemoSection } from "@/components/product-demo";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { CtaBanner } from "@/components/ui/CtaBanner";
-import { MarketingHero } from "@/components/ui/MarketingHero";
 import {
   ecosystemComingSoon,
   ecosystemPageCopy,
@@ -25,20 +24,13 @@ const statusOrder: EcosystemProductStatus[] = [
 ];
 
 export default function ProductEcosystemPage() {
-  const { hero, platforms, comingSoon, disclaimer, footnote, closingCta } =
+  const { platforms, comingSoon, disclaimer, footnote, closingCta } =
     ecosystemPageCopy;
   const liveCount = getLiveEcosystemProducts().length;
 
   return (
     <>
-      <MarketingHero eyebrow={hero.eyebrow} title={hero.title} description={hero.description}>
-        <Button href="/products" variant="outline" size="lg">
-          Live product catalog
-        </Button>
-        <Button href="/partners" variant="gradient" size="lg">
-          Partner with us
-        </Button>
-      </MarketingHero>
+      <ProductEcosystemHeroSection />
 
       <Container className="py-8 sm:py-10">
         <p className="mx-auto max-w-3xl text-center text-sm text-muted sm:text-base">

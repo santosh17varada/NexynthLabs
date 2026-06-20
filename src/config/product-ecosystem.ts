@@ -96,10 +96,7 @@ export const ecosystemPlatforms: readonly EcosystemProduct[] = [
       "Operational dashboards in roadmap",
       "Not live — partnership discussions welcome",
     ],
-    links: [
-      { label: "Temple partner model", href: "/partners" },
-      { label: "Partner enquiry", href: "/partners" },
-    ],
+    links: [{ label: "Temple partner enquiry", href: "/partners" }],
   },
   {
     id: "vendor-marketplace",

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { brandDescriptor, brandLogoMarkSrc, brandName } from "@/config/site-values";
 import { cn } from "@/lib/cn";
@@ -9,6 +8,8 @@ type LogoProps = {
   /** Premium lockup line beneath the wordmark — used in site header. */
   showDescriptor?: boolean;
   tone?: "light" | "dark";
+  /** Hint LCP fetch for header lockup — static markup only, no client branching. */
+  priority?: boolean;
 };
 
 export function Logo({
@@ -16,6 +17,7 @@ export function Logo({
   showWordmark = true,
   showDescriptor = false,
   tone = "light",
+  priority = false,
 }: LogoProps) {
   const wordmarkToneClass = tone === "dark" ? "text-on-dark" : "text-foreground";
   const descriptorToneClass = tone === "dark" ? "text-on-dark-muted" : "text-muted";
@@ -34,17 +36,19 @@ export function Logo({
       }
     >
       <span
-        className="relative inline-flex shrink-0 items-center justify-center overflow-visible bg-transparent h-9 w-9 lg:h-10 lg:w-10"
+        className="relative inline-flex h-9 w-9 shrink-0 items-center justify-center overflow-visible bg-transparent lg:h-10 lg:w-10"
         aria-hidden="true"
       >
-        <Image
+        {/* Native img keeps SSR/client markup identical inside client Header boundaries. */}
+        {/* eslint-disable-next-line @next/next/no-img-element -- static brand mark; avoids Image srcSet hydration drift */}
+        <img
           src={brandLogoMarkSrc}
           alt=""
-          width={80}
-          height={80}
-          sizes="(max-width: 1023px) 36px, 40px"
+          width={40}
+          height={40}
+          decoding="async"
+          fetchPriority={priority ? "high" : undefined}
           className="h-full w-full object-contain"
-          priority
         />
       </span>
       {showWordmark ? (

@@ -2,11 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { useLocale } from "@/components/i18n/LocaleProvider";
 import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 import { Button } from "@/components/ui/Button";
-import { Logo } from "@/components/ui/Logo";
 import {
   headerNavigation,
   isHeaderNavGroup,
@@ -506,7 +505,12 @@ function MobileNavGroup({
   );
 }
 
-export function Header() {
+type HeaderProps = {
+  /** Server-rendered brand lockup — keeps Logo markup identical on SSR and hydration. */
+  brand: ReactNode;
+};
+
+export function Header({ brand }: HeaderProps) {
   const headerRef = useRef<HTMLElement>(null);
   const [menuSession, setMenuSession] = useState<{
     open: boolean;
@@ -656,7 +660,7 @@ export function Header() {
         />
       ) : null}
       <div className="relative z-[101] mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-3 px-4 py-2.5 sm:px-6 sm:py-3 lg:grid-cols-[1fr_auto_1fr] lg:px-8">
-        <Logo className="min-w-0 justify-self-start" showDescriptor />
+        {brand}
 
         <nav
           className="site-header-nav relative hidden items-center justify-center gap-0.5 lg:flex xl:gap-1"

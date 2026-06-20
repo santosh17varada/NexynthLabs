@@ -155,14 +155,14 @@ function staticChecks() {
     }
   }
 
-  const middleware = readFileSync(join(root, "src/middleware.ts"), "utf8");
-  if (!middleware.includes("/admin/login")) {
-    fail("Admin login route not in middleware");
+  const proxy = readFileSync(join(root, "src/proxy.ts"), "utf8");
+  if (!proxy.includes("/admin/login")) {
+    fail("Admin login route not in proxy");
   }
-  if (middleware.includes('pathname === "/login"')) {
-    fail("Public /login route in middleware — unexpected");
+  if (proxy.includes('pathname === "/login"')) {
+    fail("Public /login route in proxy — unexpected");
   } else {
-    pass("No public /login in middleware (admin-only)");
+    pass("No public /login in proxy (admin-only)");
   }
 
   const fakeClaimPatterns = [

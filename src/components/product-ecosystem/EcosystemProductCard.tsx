@@ -42,10 +42,10 @@ export function EcosystemProductCard({ product }: { product: EcosystemProduct })
 
       {product.links && product.links.length > 0 && (
         <div className="mt-6 flex flex-col gap-2">
-          {product.links.map((link) =>
+          {product.links.map((link, index) =>
             link.external ? (
               <a
-                key={link.href}
+                key={`${link.href}-${link.label}-${index}`}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -55,7 +55,7 @@ export function EcosystemProductCard({ product }: { product: EcosystemProduct })
               </a>
             ) : (
               <Link
-                key={link.href}
+                key={`${link.href}-${link.label}-${index}`}
                 href={link.href}
                 className="inline-flex min-h-11 items-center text-sm font-semibold text-electric-blue transition-colors hover:text-electric-violet hover:underline"
               >

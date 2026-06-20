@@ -1,5 +1,6 @@
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { Logo } from "@/components/ui/Logo";
 import { DeferredAiAssistant } from "@/components/layout/DeferredAiAssistant";
 import { DeferredPageConversionLayer } from "@/components/layout/DeferredPageConversionLayer";
 import { SkipToContent } from "@/components/layout/SkipToContent";
@@ -26,7 +27,15 @@ export default function SiteLayout({
         <JsonLd data={siteJsonLd} />
         <AnalyticsScripts />
         <SkipToContent />
-        <Header />
+        <Header
+          brand={
+            <Logo
+              className="min-w-0 justify-self-start"
+              showDescriptor
+              priority
+            />
+          }
+        />
         <LocaleReadinessBanner />
         <main
           id="main-content"
