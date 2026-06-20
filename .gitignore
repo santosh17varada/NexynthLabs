@@ -36,6 +36,14 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local lead storage (generated at runtime)
+/data/leads.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# local tooling
+.cursor/
+.lighthouse/

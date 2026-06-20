@@ -1,0 +1,78 @@
+{
+  "brand": "Nexynth Labs",
+  "legalEntity": "Nexynth Labs Private Limited",
+  "version": "1.0",
+  "colors": {
+    "primary": {
+      "name": "Nexynth Navy",
+      "hex": "#1e3a5f",
+      "rgb": "30, 58, 95",
+      "cmyk": "84, 63, 28, 48",
+      "usage": "Primary brand color, headers, logo on light backgrounds, buttons"
+    },
+    "primaryDark": {
+      "name": "Deep Midnight",
+      "hex": "#0f1b2d",
+      "rgb": "15, 27, 45",
+      "cmyk": "90, 78, 50, 65",
+      "usage": "Dark mode backgrounds, body text on light surfaces"
+    },
+    "accent": {
+      "name": "Synth Gold",
+      "hex": "#b8891f",
+      "rgb": "184, 137, 31",
+      "cmyk": "20, 35, 90, 15",
+      "usage": "Accent highlights, logo mark, CTAs, dividers"
+    },
+    "accentLight": {
+      "name": "Soft Gold",
+      "hex": "#d4ad4a",
+      "rgb": "212, 173, 74",
+      "cmyk": "15, 25, 75, 5",
+      "usage": "Hover states, subtle highlights on dark backgrounds"
+    },
+    "background": {
+      "name": "Warm Ivory",
+      "hex": "#f8f7f4",
+      "rgb": "248, 247, 244",
+      "cmyk": "3, 2, 4, 0",
+      "usage": "Light mode page background, print stationery"
+    },
+    "surface": {
+      "name": "Pure Surface",
+      "hex": "#ffffff",
+      "rgb": "255, 255, 255",
+      "cmyk": "0, 0, 0, 0",
+      "usage": "Cards, email backgrounds, business card base"
+    },
+    "muted": {
+      "name": "Slate Muted",
+      "hex": "#5b6472",
+      "rgb": "91, 100, 114",
+      "cmyk": "60, 45, 35, 20",
+      "usage": "Secondary text, captions"
+    },
+    "border": {
+      "name": "Mist Border",
+      "hex": "#d9dde4",
+      "rgb": "217, 221, 228",
+      "cmyk": "12, 8, 7, 0",
+      "usage": "Dividers, borders"
+    }
+  },
+  "gradients": {
+    "heroDark": {
+      "css": "linear-gradient(135deg, #0f1b2d 0%, #1e3a5f 55%, #2a4a73 100%)",
+      "usage": "Social banners, presentation covers"
+    },
+    "goldShine": {
+      "css": "linear-gradient(90deg, #b8891f 0%, #d4ad4a 50%, #b8891f 100%)",
+      "usage": "Accent lines, premium badges"
+    }
+  },
+  "accessibility": {
+    "primaryOnBackground": "AAA for large text",
+    "accentOnPrimary": "Use white or ivory text on navy buttons",
+    "notes": "Do not use gold text on ivory for body copy — insufficient contrast"
+  }
+}

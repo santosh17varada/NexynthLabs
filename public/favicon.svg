@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <title>Nexynth Labs</title>
+  <rect width="32" height="32" rx="7" fill="#1e3a5f"/>
+  <path d="M9 22V10h3.25l4.75 7.25V10H20v12h-3.25L12 14.75V22H9z" fill="#f8f7f4"/>
+  <circle cx="23" cy="9" r="2.5" fill="#b8891f"/>
+</svg>

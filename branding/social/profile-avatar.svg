@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <title>Nexynth Labs  Profile Avatar</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1b2d"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <rect x="100" y="100" width="200" height="200" rx="44" fill="#1e3a5f" stroke="#b8891f" stroke-width="3"/>
+  <path d="M155 280V120h16l28 42V120h20v160h-16l-28-42v42h-20z" fill="#f8f7f4"/>
+  <circle cx="268" cy="132" r="14" fill="#b8891f"/>
+  <path d="M130 330h140v8H130z" fill="#b8891f" opacity="0.6"/>
+</svg>

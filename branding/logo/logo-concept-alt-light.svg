@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none" role="img" aria-label="Nexynth Labs  alternate concept">
+  <title>Nexynth Labs  Concept B</title>
+  <!-- Concept B: hexagon synthesis mark -->
+  <g transform="translate(8,8)">
+    <path d="M24 4 L44 16 V40 L24 52 L4 40 V16 Z" fill="#1e3a5f"/>
+    <path d="M24 12 L36 20 V36 L24 44 L12 36 V20 Z" fill="none" stroke="#b8891f" stroke-width="2"/>
+    <circle cx="24" cy="28" r="4" fill="#b8891f"/>
+  </g>
+  <text x="72" y="28" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#b8891f" letter-spacing="2">NEXYNTH LABS</text>
+  <text x="72" y="44" font-family="system-ui, sans-serif" font-size="13" fill="#5b6472">Thoughtful technology for modern India</text>
+</svg>

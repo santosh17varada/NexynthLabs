@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none" role="img" aria-label="GetPandit platform overview">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1b2d"/>
+      <stop offset="55%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#2a4a73"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#f8f7f4" opacity="0.06" stroke="#b8891f" stroke-width="2"/>
+  <text x="120" y="160" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#b8891f" letter-spacing="3">GETPANDIT</text>
+  <text x="120" y="210" font-family="system-ui,sans-serif" font-size="36" font-weight="600" fill="#f8f7f4">Pandit discovery &amp; pooja booking</text>
+  <rect x="120" y="250" width="280" height="120" rx="16" fill="#1e3a5f"/>
+  <text x="140" y="290" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f8f7f4">Browse pandits</text>
+  <text x="140" y="320" font-family="system-ui,sans-serif" font-size="13" fill="#f8f7f4" opacity="0.8">Profiles � packages � languages</text>
+  <rect x="420" y="250" width="280" height="120" rx="16" fill="#1e3a5f"/>
+  <text x="440" y="290" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f8f7f4">Schedule ceremony</text>
+  <text x="440" y="320" font-family="system-ui,sans-serif" font-size="13" fill="#f8f7f4" opacity="0.8">Date � ritual � location</text>
+  <rect x="720" y="250" width="280" height="120" rx="16" fill="#1e3a5f"/>
+  <text x="740" y="290" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#f8f7f4">Stay informed</text>
+  <text x="740" y="320" font-family="system-ui,sans-serif" font-size="13" fill="#f8f7f4" opacity="0.8">Notifications � reminders</text>
+  <text x="120" y="450" font-family="system-ui,sans-serif" font-size="14" fill="#d4ad4a">getpandit.com  independent product domain</text>
+</svg>

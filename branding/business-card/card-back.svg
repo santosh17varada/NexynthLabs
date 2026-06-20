@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550" width="850" height="550">
+  <title>Nexynth Labs Business Card  Back</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1b2d"/>
+      <stop offset="55%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#2a4a73"/>
+    </linearGradient>
+  </defs>
+  <rect width="850" height="550" fill="url(#bg)"/>
+  <rect x="0" y="542" width="850" height="8" fill="#b8891f"/>
+  <text x="425" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#f8f7f4">Building thoughtful technology</text>
+  <text x="425" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#f8f7f4">for modern India</text>
+  <line x1="325" y1="280" x2="525" y2="280" stroke="#b8891f" stroke-width="2"/>
+  <text x="425" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#d4ad4a" letter-spacing="2">PRODUCT ENGINEERING � AI � WEB � MOBILE</text>
+  <g transform="translate(381, 380)">
+    <rect width="88" height="88" rx="18" fill="#1e3a5f" stroke="#b8891f" stroke-width="1"/>
+    <path d="M26 62V26h8.5l12 18V26H58v36h-8.5L30 44v18H26z" fill="#f8f7f4"/>
+    <circle cx="64" cy="24" r="6" fill="#b8891f"/>
+  </g>
+  <text x="425" y="510" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#f8f7f4" opacity="0.7">getpandit.com</text>
+</svg>
